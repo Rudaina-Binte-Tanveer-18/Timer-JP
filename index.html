@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Timer</h1>
+    <div id="inputTime">
+        <input type="number" placeholder="How many minutes timer do you want?" id="time" name="time">
+        <button onclick="inputTime(time.value)">Enter</button>
+    </div>
+    <div id="timer">
+        <h3 id="minute">00</h3>&nbsp;<p>:&nbsp;</p>
+        <h3 id="second">00</h3>&nbsp;<p>:&nbsp;</p>
+        <h3 id="millisecond">00</h3>
+    </div>
+    <div id="buttons">
+        <button id="start" onclick="startWatch()">Start</button>
+        <button id="pause" onclick="pauseWatch()">Pause</button>
+        <button id="reset" onclick="resetWatch()">Reset</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
